@@ -38,7 +38,7 @@ runs:
           sudo apt-get update -qq
           sudo apt-get -y install --no-install-recommends git
     - name: Install Verible
-      uses: chipsalliance/verible-actions-common/install-verible@main
+      uses: zaporozhets/verible-actions-common/install-verible@main
       with:
         github_token: ${{ inputs.github_token }}
         verible_version: ${{ inputs.verible_version }}
